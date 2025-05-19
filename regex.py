@@ -1,10 +1,11 @@
 import re
 
 def validate_email(email):
+    
     # Define the regex pattern for a valid email
     pattern = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
     
-    # Use re.match to check if the email matches the pattern
+    
     if re.match(pattern, email):
         return "Email format is correct"
     else:
